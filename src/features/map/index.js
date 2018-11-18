@@ -1,6 +1,15 @@
 import React from "react";
 
-function getTileSprite(type) {}
+function getTileSprite(type) {
+  switch (type) {
+    case 0:
+      return "grass";
+    case 5:
+      return "rock";
+    case 6:
+      return "tree";
+  }
+}
 
 function MapTile(props) {
   return <div className="tile">{props.tile}</div>;
