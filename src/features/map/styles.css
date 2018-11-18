@@ -1,7 +1,10 @@
 .tile {
-  display: "inline-flex";
+  display: inline-flex;
+  background-color: green;
 }
-
+.grass {
+  background-color: green;
+}
 .rock {
   background-image: url("/tiles/rock.png");
 }
