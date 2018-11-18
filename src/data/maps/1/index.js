@@ -12,3 +12,4 @@ const tiles = [
 ];
 
 //10:47
+export { tiles };
