@@ -13,7 +13,10 @@ function getTileSprite(type) {
 
 function MapTile(props) {
   return (
-    <div className="tile" style={{ height: SPRITE_SIZE, width: SPRITE_SIZE }}>
+    <div
+      className={`tile ${getTileSprite(props.tile)}`}
+      style={{ height: SPRITE_SIZE, width: SPRITE_SIZE }}
+    >
       {props.tile}
     </div>
   );
