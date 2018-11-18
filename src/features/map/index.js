@@ -1,5 +1,5 @@
 import React from "react";
-
+import { SPRITE_SIZE } from "../../config/constants";
 function getTileSprite(type) {
   switch (type) {
     case 0:
@@ -12,7 +12,11 @@ function getTileSprite(type) {
 }
 
 function MapTile(props) {
-  return <div className="tile">{props.tile}</div>;
+  return (
+    <div className="tile" style={{ height: SPRITE_SIZE, width: SPRITE_SIZE }}>
+      {props.tile}
+    </div>
+  );
 }
 
 function MapRow(props) {
