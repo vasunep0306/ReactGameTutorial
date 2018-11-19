@@ -5,9 +5,9 @@ function getTileSprite(type) {
   switch (type) {
     case 0:
       return "grass";
-    case 5:
+    case 1:
       return "rock";
-    case 6:
+    case 2:
       return "tree";
   }
 }
