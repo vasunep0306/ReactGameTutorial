@@ -5,7 +5,7 @@ const initialState = {
 
 const playerReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "MOVE_PLAYER":
+    case "MOVE_PLAYER": // 4:22 video 3.
       return {
         ...action.payload
       };
